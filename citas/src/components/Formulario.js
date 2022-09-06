@@ -1,6 +1,6 @@
 import React,{Fragment, useState} from 'react';
 import shortid from 'shortid';
-import PropTypes from 'prop-Types';
+// import PropTypes from 'prop-Types';
 
 const Formulario = ({crearCita}) =>{
 
@@ -131,8 +131,8 @@ const Formulario = ({crearCita}) =>{
     )
 }
 
-Formulario.propTypes = { 
-    crearCita: PropTypes.func.isRequired,
-};
+// Formulario.propTypes = { 
+//     crearCita: PropTypes.func.isRequired, 
+// };
 
 export default Formulario;
