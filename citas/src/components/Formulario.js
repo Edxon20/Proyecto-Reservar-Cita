@@ -1,5 +1,6 @@
 import React,{Fragment, useState} from 'react';
 import shortid from 'shortid';
+import PropTypes from 'prop-Types';
 
 const Formulario = ({crearCita}) =>{
 
@@ -50,15 +51,13 @@ const Formulario = ({crearCita}) =>{
 
         //Actualizar formulario
 
-        actualizarCita = {
-
+        actualizarCita = ({
             mascota: '',
             propietario: '',
             fecha: '',
             hora: '',
             sintomas: ''
-
-        }
+        })
 
 
 
@@ -132,6 +131,8 @@ const Formulario = ({crearCita}) =>{
     )
 }
 
-
+Formulario.propTypes = { 
+    crearCita: PropTypes.func.isRequired,
+};
 
 export default Formulario;
